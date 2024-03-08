@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://s3.amazonaws.com/mejba.me/aws-logo.png"
+    />
+    <title>Engr Aws - Deploy application on EC2 using GitHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        background-color: #252f3e;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+      .container h1 {
+        font-family: "Pacifico", cursive;
+        color: #ff9900;
+        font-size: 48px;
+        display: flex;
+      }
+      .container .aws-logo {
+        padding-top: 48px;
+        width: 112px;
+      }
+      .container h2 {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        color: #fff;
+        font-size: 28px;
+        font-weight: normal;
+      }
+      .aws-service-list-wrap {
+        padding: 48px 0px;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .aws-service-list-wrap h3 {
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        color: #fff;
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .aws-service-list-wrap ul {
+        color: #ff9900;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 32px;
+        font-size: 20px;
+        font-weight: normal;
+        gap: 24px;
+      }
+
+      @media screen and (max-width: 767px) {
+        .container h1 {
+          font-size: 32px;
+          line-height: 24px;
+        }
+        .container h2 {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="aws-logo"
+        src="https://s3.amazonaws.com/mejba.me/aws-logo.png"
+        alt="Aws logo"
+      />
+      <h1>Congratulations Engr Aws</h1>
+      <h2>This application was deployed using AWS CodeDeploy.</h2>
+      <div class="aws-service-list-wrap">
+        <h3>I have used below service in this Applicaiton:</h3>
+        <ul>
+          <li>IAM console (created 2 role )</li>
+          <li>Aws EC2 Instances</li>
+          <li>Aws security Group</li>
+          <li>Amazon S3</li>
+          <li>Developer Tools (Deploy - Applicaiton)</li>
+          <li>Developer Tools (Deploy - Deployment groups)</li>
+          <li>Developer Tools (Pipelines)</li>
+          <li>Developer Tools (Github)</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
